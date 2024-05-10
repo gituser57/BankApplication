@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1dbbdf68-ac90-488e-a9d6-685dec8b69e3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="97c842f0-d0b8-4266-97a4-d0e13de1bd52" name="UI">
+      <comments>
+        <comment Id="8f37fc21-6560-4ea5-ad56-e6fb5604d7ce" name="Comment1">
+          <body>User Interface Layer</body>
+          <layerElements>
+            <linkFromCommentToLayerElement>
+              <layerMoniker Id="a72baa3f-7ccd-44ec-85b9-6a9accb600fe" />
+            </linkFromCommentToLayerElement>
+          </layerElements>
+        </comment>
+      </comments>
+      <childLayers>
+        <layer Id="a72baa3f-7ccd-44ec-85b9-6a9accb600fe" name="BankApplication">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="cc9eab96-d60f-4575-9303-c1695a7f4abd" direction="Forward">
+              <layerMoniker Id="1d3b0f89-144a-40b0-8bea-6642bb272ad0" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="f81ea23c-1f74-45d6-b111-ccdb389e9210" name="BankApplication">
+              <ArtifactNode Label="BankApplication" Category="CodeSchema_Project" Id="(Assembly=../BankApplication/BankApplication.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=BankApplication)" Label="BankApplication.exe" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.exe" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="69bee6e6-7b1f-476e-b319-87d7f47bbb5f" name="BankApplication1">
+          <ArtifactNode Label="BankApplication" Category="CodeSchema_Project" Id="(Assembly=../BankApplication/BankApplication.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BankApplication)" Label="BankApplication.exe" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.exe" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="191ddacb-f6e6-45b4-b15a-7b2694509ef1" name="BL">
+      <comments>
+        <comment Id="9051dc95-83dc-4c50-8960-a559b549e2a9" name="Comment1">
+          <body>Bisness Logic Layer</body>
+          <layerElements>
+            <linkFromCommentToLayerElement>
+              <layerMoniker Id="1d3b0f89-144a-40b0-8bea-6642bb272ad0" />
+            </linkFromCommentToLayerElement>
+          </layerElements>
+        </comment>
+      </comments>
+      <childLayers>
+        <layer Id="1d3b0f89-144a-40b0-8bea-6642bb272ad0" name="BankLibrary">
+          <references>
+            <reference Id="ae3429d8-d293-4067-be7b-08080bb3f8a5" name="BankLibrary">
+              <ArtifactNode Label="BankLibrary" Category="CodeSchema_Project" Id="(Assembly=../BankLibrary/BankLibrary.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=BankLibrary)" Label="BankLibrary.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="4d733845-2080-45b5-a421-3bf5f8c876c7" name="BankLibrary">
+          <ArtifactNode Label="BankLibrary" Category="CodeSchema_Project" Id="(Assembly=../BankLibrary/BankLibrary.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BankLibrary)" Label="BankLibrary.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
